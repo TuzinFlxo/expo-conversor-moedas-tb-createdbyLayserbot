@@ -89,7 +89,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#FFFFFF', // Fundo branco
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -98,33 +98,36 @@ const styles = StyleSheet.create({
     fontSize: 25,
   },
   picker: {
-    color: '#fff',
+    color: '#FFFFFF', // Fonte branca
     width: 200,
     height: 50,
-    backgroundColor: '#009999'
+    backgroundColor: '#000000', // Fundo preto
   },
   input: {
-    color: '#fff',
+    color: '#FFFFFF', // Fonte branca
     textAlign: 'right',
     height: 40,
     width: 200,
-    backgroundColor: '#999',
+    backgroundColor: '#000000', // Fundo preto
   },
   tbMoeda: {
-    color: '#fff'
+    color: '#FFFFFF', // Fonte branca
   },
   button: {
     marginTop: 20,
     width: 200,
     height: 40,
     paddingBottom: 10,
-    backgroundColor: '#999',
+    backgroundColor: '#000000', // Fundo preto
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    borderRadius: 5
+    borderRadius: 5,
+  },
+  buttonText: {
+    color: '#FFFFFF', // Fonte branca
   },
   lbResultado: {
-    color: '#000'
-  }
+    color: '#000',
+  },
 });
