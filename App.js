@@ -75,10 +75,10 @@ export default function App() {
         </TextInput>
       </View>
       <Pressable onPress={handleConverter} style={styles.button}>
-        <Text style={styles.title}>Conveter</Text>
+        <Text style={styles.buttonText}>Conveter</Text>
       </Pressable>
       <Pressable onPress={handleLimpar} style={styles.button}>
-        <Text style={styles.title}>Limpar</Text>
+        <Text style={styles.buttonText}>Limpar</Text>
       </Pressable>
       <View><Text style={styles.lbResultado}>{resultado}</Text></View>
       <StatusBar style="auto" />
@@ -89,7 +89,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#FFFFFF', // Fundo branco
+    backgroundColor: '#FFFFFF',
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -98,34 +98,35 @@ const styles = StyleSheet.create({
     fontSize: 25,
   },
   picker: {
-    color: '#FFFFFF', // Fonte branca
+    color: '#FFFFFF',
     width: 200,
     height: 50,
-    backgroundColor: '#000000', // Fundo preto
+    backgroundColor: '#000000',
   },
   input: {
-    color: '#FFFFFF', // Fonte branca
+    color: '#FFFFFF',
     textAlign: 'right',
     height: 40,
     width: 200,
-    backgroundColor: '#000000', // Fundo preto
+    backgroundColor: '#000000',
   },
   tbMoeda: {
-    color: '#FFFFFF', // Fonte branca
+    color: '#FFFFFF',
   },
   button: {
     marginTop: 20,
     width: 200,
     height: 40,
     paddingBottom: 10,
-    backgroundColor: '#000000', // Fundo preto
+    backgroundColor: '#000000',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
     borderRadius: 5,
+    color: '#FFFFFF',
   },
   buttonText: {
-    color: '#FFFFFF', // Fonte branca
+    color: '#FFFFFF',
   },
   lbResultado: {
     color: '#000',
