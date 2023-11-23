@@ -32,7 +32,7 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Convesor de Moedas</Text>
+      <Text style={styles.title}>Conversor de Moedas</Text>
       <View>
         <Text style={styles.tbMoeda}>Moeda 1</Text>
         <Picker
@@ -89,29 +89,32 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#000',
+    backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
   },
   title: {
-    color: '#fff'
+    color: '#000',
+    fontSize: 25,
   },
   picker: {
     color: '#fff',
     width: 200,
     height: 50,
-    backgroundColor: '#000'
+    backgroundColor: '#009999'
   },
   input: {
     color: '#fff',
     textAlign: 'right',
     height: 40,
-    width: 200
+    width: 200,
+    backgroundColor: '#999',
   },
   tbMoeda: {
     color: '#fff'
   },
   button: {
+    marginTop: 20,
     width: 200,
     height: 40,
     paddingBottom: 10,
@@ -122,6 +125,6 @@ const styles = StyleSheet.create({
     borderRadius: 5
   },
   lbResultado: {
-    color: '#fff'
+    color: '#000'
   }
 });
