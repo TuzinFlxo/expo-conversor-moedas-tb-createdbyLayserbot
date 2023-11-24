@@ -32,9 +32,11 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Conversor de Moedas</Text>
+      <Text style={styles.title}>Conveter Moedas</Text>
+      <Text> </Text> 
+      <Text> </Text>
       <View>
-        <Text style={styles.tbMoeda}>Moeda 1</Text>
+        <Text style={styles.tbMoeda}>Moeda Original:</Text>
         <Picker
           style={styles.picker}
           selectedValue={moedaOrigem}
@@ -49,8 +51,10 @@ export default function App() {
           <Picker.Item label="Bitcoin" value="BTC" />
         </Picker>
       </View>
+      <Text> </Text>
+      <Text> </Text>
       <View>
-        <Text style={styles.tbMoeda}>Moeda 2</Text>
+        <Text style={styles.tbMoeda}>Moeda de Destino:</Text>
         <Picker
           style={styles.picker}
           selectedValue={moedaDestino}
@@ -65,8 +69,10 @@ export default function App() {
           <Picker.Item label="Bitcoin" value="BTC" />
         </Picker>
       </View>
+      <Text> </Text>
+      <Text> </Text>
       <View>
-        <Text style={styles.tbMoeda}>Valo para Conversão</Text>
+        <Text style={styles.tbMoeda}>Valo da conversão:</Text>
         <TextInput
           style={styles.input}
           value={valorEntrada}
@@ -89,26 +95,26 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#FFFFFF',
+    backgroundColor: '#000000',
     alignItems: 'center',
     justifyContent: 'center',
   },
   title: {
-    color: '#000',
+    color: '#fff',
     fontSize: 25,
   },
   picker: {
     color: '#FFFFFF',
     width: 200,
     height: 50,
-    backgroundColor: '#000000',
+    backgroundColor: '#525252',
   },
   input: {
-    color: '#FFFFFF',
+    color: '#000000',
     textAlign: 'right',
     height: 40,
     width: 200,
-    backgroundColor: '#000000',
+    backgroundColor: '#ffff',
   },
   tbMoeda: {
     color: '#FFFFFF',
@@ -118,7 +124,7 @@ const styles = StyleSheet.create({
     width: 200,
     height: 40,
     paddingBottom: 10,
-    backgroundColor: '#000000',
+    backgroundColor: '#525252',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
@@ -129,6 +135,6 @@ const styles = StyleSheet.create({
     color: '#FFFFFF',
   },
   lbResultado: {
-    color: '#000',
+    color: '#ffff',
   },
 });
